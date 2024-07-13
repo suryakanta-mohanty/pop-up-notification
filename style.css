@@ -28,6 +28,7 @@ body{
 
 .btn{
   margin: 100px ;
+  position: relative;
 }
 
 .btn p{
@@ -42,6 +43,13 @@ body{
   transform: translateY(25px);
   visibility: hidden;
   transition: transform 0.3s ease-in-out;
+}
+
+.btn #instruction{
+  visibility: visible;
+  position: absolute;
+  transform: translateY(0px);
+  
 }
 
 .btn .p-show{
