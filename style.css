@@ -18,6 +18,7 @@ body{
   cursor: pointer;
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  display: block;
 }
 
 .btn button:active{
@@ -27,6 +28,31 @@ body{
 
 .btn{
   margin: 100px ;
+}
+
+.btn p{
+  font-size: 12px;
+  margin-top: 20px;
+  color: rgb(224, 32, 32);
+  background: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1); 
+  transform: translateY(25px);
+  visibility: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn .p-show{
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.btn p::after, .btn p::before{
+  content: '*';
+  margin: 0 5px;
+
 }
 
 .container{
