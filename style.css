@@ -5,3 +5,77 @@
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+body{
+  background: #BBBFCA;
+}
+
+.btn button{
+  background: #F6F7D7;
+  color: #FF165D;
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.btn button:active{
+  box-shadow: none;
+  color: #495464;
+}
+
+.btn{
+  margin: 100px ;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid; */
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+  /* display: none; */
+}
+
+.container img{
+  width: 70px;
+  position: absolute;
+  left: 37%;
+  top: -40px;
+  
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.2));
+}
+
+.container h1{
+  font-size: 18px;
+  margin: 30px 0 20px;
+}
+
+.container p{
+  font-size: 11px;
+  margin: 0 0 40px;
+}
+
+.container button{
+  cursor: pointer;
+  background: #6fd649;
+  border: none;
+  padding: 8px 0;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: white;
+}
+
+.container button:active{
+  box-shadow: none;
+}
