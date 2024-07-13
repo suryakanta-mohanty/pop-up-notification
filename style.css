@@ -42,7 +42,7 @@ body{
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1); 
   transform: translateY(25px);
   visibility: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.35s ease-in;
 }
 
 .btn #instruction{
@@ -78,7 +78,7 @@ body{
   border-radius: 20px;
   box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
   visibility: hidden;
-  transition: transform 0.15s ease-in-out, top 0.15s ease-in-out;
+  transition: transform 0.35s ease-in-out, top 0.35s ease-in-out;
 }
 
 .container-popUp{
@@ -119,4 +119,14 @@ body{
 
 .container button:active{
   box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+  .btn p{
+    margin-top: 13px;
+  }
+
+  .container-popUp{
+    transform: translate(-50%, -30%) scale(1);
+  }
 }
